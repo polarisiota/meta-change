@@ -25,7 +25,7 @@ pub struct UpdateAuthority<'info> {
 pub fn handler(ctx: Context<UpdateAuthority>) -> Result<()> {
     let metadata_account = ctx.accounts.metadata_account.borrow();
     let update_authority = ctx.accounts.update_authority.borrow();
-    // let metadata = Metadata::from_account_info(&metadata_account).unwrap();
+    let metadata = Metadata::from_account_info(&metadata_account).unwrap();
 
     let ix = update_metadata_accounts_v2(
         ctx.accounts.token_metadata_program.key(),

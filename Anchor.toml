@@ -1,13 +1,14 @@
 [features]
 seeds = false
-[programs.localnet]
-meta_change = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[programs.devnet]
+meta_change = "GooUZvk7JsXpggyBne9UStxV4RJkuevKzmPyhCN29kGW"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/powell/.config/solana/id.json"
 
 [scripts]
